@@ -369,7 +369,7 @@ public class ClaimRent extends BoughtTransaction
 			}
 			
 			player.sendMessage(RealEstate.instance.config.chatPrefix + ChatColor.AQUA + "You have successfully rented this " + claimType + 
-					" for " + ChatColor.GREEN + price + RealEstate.econ.currencyNamePlural());
+					" for " + ChatColor.GREEN + price + RealEstate.econ.currencyNamePlural() + ChatColor.AQUA + ", if you would like rent to automatically renew each period, use " + ChatColor.GREEN + "/re renewrent enable");
 			
 			destroySign();
 		}
